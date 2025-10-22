@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Voting.Application.Interfaces;
 using Voting.Application.Services;
 using Voting.Core.Configuration;
-using Voting.Core.Interfaces;
 using Voting.Infrastructure;
+using Voting.Infrastructure.Repositories;
 
 namespace Voting.Web.Startup;
 
@@ -44,8 +45,14 @@ public static class ServiceExtensions
         services.AddSingleton<AppConfiguration>();
 
         services.AddScoped<VotingDbContextMigrate>();
+        services.AddScoped<VoteRepository>();
+        services.AddScoped<ProposalRepostiory>();
+        services.AddScoped<UserRepository>();
+
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         services.AddScoped<IBlockchainService, BlockchainService>();
+        services.AddScoped<IAuthService, AuthService>();
 
 
         return services;

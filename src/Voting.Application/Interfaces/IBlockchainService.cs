@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Voting.Core.Models;
 
-namespace Voting.Core.Interfaces;
+namespace Voting.Application.Interfaces;
 
 public interface IBlockchainService
 {

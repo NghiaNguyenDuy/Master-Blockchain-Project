@@ -3,8 +3,8 @@ using Nethereum.Contracts;
 using Nethereum.Web3;
 using Nethereum.Web3.Accounts;
 using System.Numerics;
+using Voting.Application.Interfaces;
 using Voting.Core.Configuration;
-using Voting.Core.Interfaces;
 using Voting.Core.Models;
 
 namespace Voting.Application.Services;

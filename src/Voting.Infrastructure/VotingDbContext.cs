@@ -14,6 +14,7 @@ public class VotingDbContext: DbContext
 
     public DbSet<Proposal> Proposals { get; set; }
     public DbSet<Vote> Votes { get; set; }
+    public DbSet<User> Users { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

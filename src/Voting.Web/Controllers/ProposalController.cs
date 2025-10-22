@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Voting.Application.Interfaces;
 using Voting.Core.Interfaces;
 
 namespace Voting.Web.Controllers;
