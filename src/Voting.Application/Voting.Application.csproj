@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Voting.Core\Voting.Core.csproj" />
+    <ProjectReference Include="..\Voting.Infrastructure\Voting.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
