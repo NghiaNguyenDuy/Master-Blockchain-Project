@@ -1,0 +1,72 @@
+# ---- Root repo ignores ----------------------------------------------------
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.iml
+
+# Logs & temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Environment & secrets (keep examples)
+.env
+.env.*
+!.env.example
+
+# Node package managers' debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- Backend: Hardhat (Solidity) -----------------------------------------
+# Project located at src/be
+src/be/artifacts/
+src/be/cache/
+src/be/coverage/
+src/be/coverage.json
+src/be/typechain*/
+src/be/deployments/
+src/be/.openzeppelin/
+src/be/hardhat-network*
+src/be/.hh_cache/
+# TS incremental build info if using TS in Hardhat
+src/be/*.tsbuildinfo
+
+# Common Node outputs inside backend
+src/be/node_modules/
+src/be/package-lock.json
+src/be/pnpm-lock.yaml
+src/be/yarn.lock
+
+# ---- Frontend: HTML/JS (Ethers.js) --------------------------------------
+# Adjust if you later switch to Vite/React/Next, etc.
+src/fe/dist/
+src/fe/build/
+src/fe/.cache/
+src/fe/node_modules/
+src/fe/package-lock.json
+src/fe/pnpm-lock.yaml
+src/fe/yarn.lock
+
+# ---- Documents -----------------------------------------------------------
+# Temporary files created by MS Office
+~$*
+# (Keep your actual .docx/.pptx/.xlsx in version control)
+
+# ---- Misc ----------------------------------------------------------------
+# OS-specific metadata inside nested folders
+**/.DS_Store
+**/Thumbs.db
+
+# Optional: ignore local tooling folders if they appear
+.coverage/
+.nyc_output/
+.parcel-cache/
+.eslintcache
